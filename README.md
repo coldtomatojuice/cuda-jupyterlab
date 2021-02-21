@@ -2,7 +2,7 @@
 
 **Build & Run custom cuda+jupyterlab docker image**
 
-Making ML Dev. environment Easyier
+Making ML Dev. Environment Build Easier
 
 You only need to install Tensorflow or Pytorch inside the container
 
