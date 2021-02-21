@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.0-devel-ubuntu18.04
+FROM nvidia/cuda:10.1-base
 
 # Updating Ubuntu packages
 RUN apt-get update && yes|apt-get upgrade
@@ -37,6 +37,7 @@ RUN conda update -y anaconda
 RUN conda update -y --all
 
 RUN conda install -y -c conda-forge jupyterlab
+RUN conda install -y -c conda-forge nodejs --repodata-fn=repodata.json
 
 RUN pip install --upgrade pip
 
